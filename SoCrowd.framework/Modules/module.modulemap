@@ -1,0 +1,10 @@
+framework module SoCrowd {
+  umbrella header "SoCrowd.h"
+
+  export *
+  module * { export * }
+}
+
+module SoCrowd.Swift {
+    header "SoCrowd-Swift.h"
+}
