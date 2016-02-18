@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => 'file:///Users/aurel/dev/socrowd/tvos/tvos_sdk', :tag => s.version }
+  s.source       = { :git => 'https://github.com/socrowd/tvos_sdk.git', :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -94,7 +94,6 @@ Pod::Spec.new do |s|
 
   s.xcconfig       = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/SoCrowd"' }
   s.source_files   = 'SoCrowd.framework/Headers/*.{h}'
-  #s.preserve_paths = 'SoCrowd.framework'
   s.vendored_frameworks = 'SoCrowd.framework'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
