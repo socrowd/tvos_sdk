@@ -92,10 +92,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.frameworks     = 'SoCrowd'
   s.xcconfig       = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/SoCrowd"' }
   s.source_files   = 'SoCrowd.framework/Headers/*.{h}'
-  s.preserve_paths = 'SoCrowd.framework'
+  #s.preserve_paths = 'SoCrowd.framework'
+  s.vendored_frameworks = 'SoCrowd.framework'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
