@@ -1,7 +1,9 @@
+# SoCrowd video SDK for Apple TV
+
 ## Example project
 
     git clone -b 0.0 https://github.com/socrowd/tvos_sdk.git
-    cd SoExample
+    cd tvos_sdk/SoExample
     pod install
     open -a Xcode SoExample.xcworkspace
 
