@@ -1,0 +1,14 @@
+
+xcodeproj 'SoExample.xcodeproj'
+
+platform :tvos, '9.0'
+use_frameworks!
+
+target 'SoExample' do
+
+    pod 'SoCrowd', :git => 'https://github.com/socrowd/tvos_sdk.git', :tag => '0.0'
+
+    # Local mode
+    #pod 'SoCrowd', :path => '..'
+
+end
