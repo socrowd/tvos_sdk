@@ -92,6 +92,27 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class SoEngaged;
+
+
+/// SoCrowd Configuration, Session and user-facing API
+SWIFT_CLASS("_TtC7SoCrowd7SoCrowd")
+@interface SoCrowd : NSObject
+
+/// A global instance for user's convenience
++ (SoCrowd * __nonnull)instance;
++ (void)setInstance:(SoCrowd * __nonnull)value;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)shouldPlay;
+
+/// Get ready to display an ad without delay
+- (void)preload;
+
+/// Loads an ad asynchronously
+- (void)load:(void (^ __nonnull)(SoEngaged * __nullable))cb;
+- (void)displayFullscreenWithPauseCb:(void (^ __nonnull)(void))pauseCb unpauseCb:(void (^ __nonnull)(void))unpauseCb continueCb:(void (^ __nonnull)(NSString * __nonnull))continueCb;
+@end
+
 
 SWIFT_CLASS("_TtC7SoCrowd9SoEngaged")
 @interface SoEngaged : NSObject

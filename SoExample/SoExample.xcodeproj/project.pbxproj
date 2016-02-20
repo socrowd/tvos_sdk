@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A7F3EA56E32963D88F19D2D /* Pods_SoExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34274D32AF90D18FA6462563 /* Pods_SoExample.framework */; };
+		7408BE461C79097F006C11D0 /* ViewControllerObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7408BE451C79097F006C11D0 /* ViewControllerObjc.m */; };
 		74451C2E1C766AA700B316CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74451C2D1C766AA700B316CF /* AppDelegate.swift */; };
 		74451C301C766AA700B316CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74451C2F1C766AA700B316CF /* ViewController.swift */; };
 		74451C331C766AA700B316CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74451C311C766AA700B316CF /* Main.storyboard */; };
@@ -18,6 +19,9 @@
 		34274D32AF90D18FA6462563 /* Pods_SoExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F873B04E3349E2A0B3D09D /* Pods-SoExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoExample/Pods-SoExample.release.xcconfig"; sourceTree = "<group>"; };
 		709003B73D5C85209DFE4C37 /* Pods-SoExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoExample/Pods-SoExample.debug.xcconfig"; sourceTree = "<group>"; };
+		7408BE431C79097F006C11D0 /* SoExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		7408BE441C79097F006C11D0 /* ViewControllerObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerObjc.h; sourceTree = "<group>"; };
+		7408BE451C79097F006C11D0 /* ViewControllerObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerObjc.m; sourceTree = "<group>"; };
 		74451C2A1C766AA700B316CF /* SoExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74451C2D1C766AA700B316CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74451C2F1C766AA700B316CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,9 @@
 				74451C311C766AA700B316CF /* Main.storyboard */,
 				74451C341C766AA700B316CF /* Assets.xcassets */,
 				74451C361C766AA700B316CF /* Info.plist */,
+				7408BE441C79097F006C11D0 /* ViewControllerObjc.h */,
+				7408BE451C79097F006C11D0 /* ViewControllerObjc.m */,
+				7408BE431C79097F006C11D0 /* SoExample-Bridging-Header.h */,
 			);
 			path = SoExample;
 			sourceTree = "<group>";
@@ -208,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74451C301C766AA700B316CF /* ViewController.swift in Sources */,
+				7408BE461C79097F006C11D0 /* ViewControllerObjc.m in Sources */,
 				74451C2E1C766AA700B316CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,10 +321,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SoExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tv.socrowd.SoExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SoExample/SoExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -326,10 +337,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SoExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tv.socrowd.SoExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SoExample/SoExample-Bridging-Header.h";
 			};
 			name = Release;
 		};
