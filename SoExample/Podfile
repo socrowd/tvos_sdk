@@ -6,7 +6,7 @@ use_frameworks!
 
 target 'SoExample' do
 
-    pod 'SoCrowd', :git => 'https://github.com/socrowd/tvos_sdk.git', :tag => '0.1'
+    pod 'SoCrowd', :git => 'https://github.com/socrowd/tvos_sdk.git', :tag => '0.2'
 
     # Local mode
     #pod 'SoCrowd', :path => '..'

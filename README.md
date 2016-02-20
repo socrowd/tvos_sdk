@@ -2,7 +2,7 @@
 
 ## Example project
 
-    git clone -b 0.1 https://github.com/socrowd/tvos_sdk.git
+    git clone -b 0.2 https://github.com/socrowd/tvos_sdk.git
     cd tvos_sdk/SoExample
     pod install
     open -a Xcode SoExample.xcworkspace
@@ -13,7 +13,7 @@ Click "run". You should see an example video content followed by a fullscreen ad
 
 ### With Cocoapods
 
-    pod 'SoCrowd', :git => 'https://github.com/socrowd/tvos_sdk.git', :tag => '0.1'
+    pod 'SoCrowd', :git => 'https://github.com/socrowd/tvos_sdk.git', :tag => '0.2'
 
 ### Manually
 
