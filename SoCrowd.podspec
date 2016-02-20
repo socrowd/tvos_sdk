@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SoCrowd"
-  s.version      = "0.0"
+  s.version      = "0.1"
   s.summary      = "SoCrowd video advertising"
   s.description  = <<-DESC
     SoCrowd video advertising for Apple TV
