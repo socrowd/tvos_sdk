@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.source_files   = 'SoCrowd.framework/Headers/*.{h}'
   s.vendored_frameworks = 'SoCrowd.framework'
 
-  s.frameworks = "Foundation", "UIKit", "AVKit"
+  s.frameworks = "Foundation", "UIKit", "AVKit", "AdSupport"
   s.requires_arc = true
 
 end
