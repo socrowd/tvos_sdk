@@ -4,8 +4,12 @@
 <dict>
 	<key>SoCrowd</key>
 	<dict>
-		<key>appId</key>
-		<string>tv.socrowd.demo</string>
+		<key>mode</key>
+		<string>test</string>
+		<key>beforeFirstAdMinimunSeconds</key>
+		<integer>0</integer>
+		<key>betweenAdsMinimumSeconds</key>
+		<integer>3</integer>
 	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
